@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tambah Konser</h1>
+    </header>
+
+    <nav>
+        <a href="user.php">Data User</a> |
+        <a href="data_pemesanan.php">Data Pemesanan</a> |
+        <a href="data_konser.php">Data Konser</a> |
+        <a href="tambah_konser.html">Tambah Konser</a>
+    </nav>
+
+    <div class="form-container">
+        <h2>Form Tambah Konser</h2>
+        <form action="proseskon.php" method="POST" enctype="multipart/form-data">
+            <label for="nama">Nama Konser:</label>
+            <input type="text" id="nama" name="nama" required aria-required="true">
+            
+            <label for="b_tamu">Bintang Tamu:</label>
+            <input type="text" id="b_tamu" name="b_tamu" required aria-required="true">
+
+            <label for="tempat">Tempat:</label>
+            <input type="text" id="tempat" name="tempat" required aria-required="true">
+
+            <div class="date-time-wrapper">
+                <div>
+                    <label for="tanggal">Tanggal:</label>
+                    <input type="date" id="tanggal" name="tanggal" required aria-required="true">
+                </div>
+                <div>
+                    <label for="waktu">Waktu:</label>
+                    <input type="time" id="waktu" name="waktu" required aria-required="true">
+                </div>
+            </div>
+
+            <label for="jumlah_tiket">Jumlah Tiket:</label>
+            <input type="number" id="jumlah_tiket" name="jumlah_tiket" required aria-required="true">
+
+            <label for="festival">Harga Festival:</label>
+            <input type="number" id="festival" name="festival" required aria-required="true">
+
+            <label for="vip">Harga VIP:</label>
+            <input type="number" id="vip" name="vip" required aria-required="true">
+
+            <label for="foto">Upload Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required aria-required="true">
+
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+
+    <footer>&copy; 2023 Admin Dashboard</footer>
+
+    <script>
+        // Set minimum date for input[type="date"] to today's date
+        const today = new Date();
+        document.getElementById('tanggal').min = today.toISOString().split('T')[0];
+    </script>
+
+</body>
+</html>

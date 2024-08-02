@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    font: 100% Lucida Sans, Verdana;
+    line-height: 26px;
+    background-color: #F8FFD2;
+}
+
+.container {
+    min-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    background-color: #13a46f;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top ul{
+    display:flex;
+    gap: 20px;
+}
+#menubar {
+    width: 200px;
+    float: left
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+    height: auto;
+    text-align: center;
+}
+
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+    color: white;
+}
+
+.menuitem a{
+    color: white;
+}
+
+.menuitem:hover {
+    background-color: rgb(25, 179, 120);
+}
+
+a {
+    color: #000000;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: auto;
+}
+
+.img {
+    float: left;
+    width: 500px;
+    margin-left: 55px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.text-box{
+    color: black;
+}
+
+.text-box h2{
+    font-size: 30px;
+}
+
+.text-box p {
+    font-size: 20px;
+}
+.text-box a{
+    font-size: 20px;
+    color: black;
+    padding: 10px 10px;
+    background-color: #13a46f;
+    border-radius: 5px;
+}
+
+.text-box a:hover{
+    color: #ffffff;
+}
+
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #D0F288;
+    text-align: center;
+    padding: 10px;
+    font-size: 80%;
+    line-height: 14px;
+    font: bold;
+    margin-top: 135px;
+}
+
+
